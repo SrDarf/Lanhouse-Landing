@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const carousel = document.querySelector('.card-carousel');
     const cards = Array.from(carousel.querySelectorAll('.card'));
     const progressBar = document.querySelector('.progress-bar');
-    const autoRotateDuration = 7000; 
+    const autoRotateDuration = 6000; 
     let autoRotateInterval;
     let progressInterval;
     let progress = 0;
