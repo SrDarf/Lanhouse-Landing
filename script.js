@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     const container = document.querySelector(".main");
-    const numberOfBalls = 10; //KKKKK
+    const numberOfBalls = 15; //KKKKK
 
     function createBlurBall() {
         const ball = document.createElement("div");
