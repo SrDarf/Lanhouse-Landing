@@ -142,7 +142,6 @@ function smoothScroll() {
 
   document.querySelector('.main').style.transform = `translateY(${scrollPosition * 0.3}px)`; 
   document.querySelector('.features').style.transform = `translateY(${scrollPosition * -0.5}px)`; 
-  document.querySelector('.ending').style.transform = `translateY(${scrollPosition * -0.5}px)`; 
   document.querySelector('footer').style.transform = `translateY(${scrollPosition * -0.5}px)`; 
   requestAnimationFrame(smoothScroll);
 }
