@@ -105,8 +105,8 @@ nav {
 
 .blur-ball {
     position: absolute;
-    width: 50px;
-    height: 50px;
+    width: 100px;
+    height: 100px;
     background: #8526dda9;
     filter: blur(50px);
     border-radius: 50%;
