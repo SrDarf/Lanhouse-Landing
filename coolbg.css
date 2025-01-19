@@ -4,6 +4,7 @@
     height: 30px;
     background-color: transparent;
     border: 6px solid rgba(255,255,255,0.8);
+    margin-top: 2rem;
 }
   
 .box div:nth-child(1) {
