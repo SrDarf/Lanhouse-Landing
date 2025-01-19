@@ -134,17 +134,31 @@ document.addEventListener('DOMContentLoaded', () => {
 let scrollPosition = 0;
 let targetScrollPosition = 0;
 let ease = 0.2;
-window.addEventListener('scroll', function() {
-  targetScrollPosition = window.scrollY; 
-});
-function smoothScroll() {
-  scrollPosition += (targetScrollPosition - scrollPosition) * ease;
 
-  document.querySelector('.main').style.transform = `translateY(${scrollPosition * 0.3}px)`; 
-  document.querySelector('.features').style.transform = `translateY(${scrollPosition * -0.5}px)`; 
-  document.querySelector('footer').style.transform = `translateY(${scrollPosition * -0.5}px)`; 
+const mobileBreakpoint = 768;
+
+window.addEventListener('scroll', function() {
+  if (window.innerWidth >= mobileBreakpoint) {
+    targetScrollPosition = window.scrollY;
+  }
+});
+
+function smoothScroll() {
+  if (window.innerWidth >= mobileBreakpoint) {
+    scrollPosition += (targetScrollPosition - scrollPosition) * ease;
+
+    document.querySelector('.main').style.transform = `translateY(${scrollPosition * 0.3}px)`;
+    document.querySelector('.features').style.transform = `translateY(${scrollPosition * -0.5}px)`;
+    document.querySelector('footer').style.transform = `translateY(${scrollPosition * -0.5}px)`;
+  } else {
+    document.querySelector('.main').style.transform = 'translateY(0)';
+    document.querySelector('.features').style.transform = 'translateY(0)';
+    document.querySelector('footer').style.transform = 'translateY(0)';
+  }
+
   requestAnimationFrame(smoothScroll);
 }
+
 smoothScroll();
 
   
