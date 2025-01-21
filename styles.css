@@ -619,8 +619,9 @@ a{
 	 position: relative;
 	 opacity: 0.9;
    font-family: Arial, Helvetica, sans-serif;
-   font-size: 1.8em;
-   color: #ffffff;
+   font-size: 1.7em;
+   font-weight: bold;
+   color: #ffffffd7;
 	 -webkit-animation: push-in 0.5s;
 	 -moz-animation: push-in 0.5s;
 	 animation: push-in 0.5s;
@@ -629,6 +630,8 @@ a{
 	 -webkit-animation: push-out 0.5s;
 	 -moz-animation: push-out 0.5s;
 	 animation: push-out 0.5s;
+   font-size: 1.8rem;
+   font-weight: bold;
 }
  @-webkit-keyframes push-in {
 	 0% {
