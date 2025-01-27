@@ -91,7 +91,7 @@ nav {
   }
 
 
-.main {
+main {
     position: relative;
     text-align: center;
     padding: 180px 20px;
@@ -126,18 +126,18 @@ nav {
 
 
 
-  .main h1 {
+  main h1 {
     font-size: 5em;
     font-weight: bold;
   }
 
-  .main h2 {
+  main h2 {
     font-size: 3em;
     font-weight: bold;
 }
 
 @media (max-width: 768px) {
-  .main h1 {
+  main h1 {
     font-size: 3em;
   }
 
@@ -150,14 +150,14 @@ nav {
     display: none;
 }
 
-  .main h3 {
+  main h3 {
     font-size: 1em; 
   }
 }
 
 
 .fix *{
-  font-size: 3em;
+  font-size: 2.3em;
   font-weight: 100000;
 }
 
@@ -171,7 +171,7 @@ nav {
   }
 }
 
-  .main p {
+  main p {
     font-size: 0.8em;
     margin-top: 20px;
     color: #ccc;
@@ -221,7 +221,7 @@ nav {
     animation: fadeInDown 1s ease-out forwards;
   }
   
-  nav, .main, .box, .main-buttons, h1, h2, p {
+  nav, main, .squares, .main-buttons, h1, h2, p {
     opacity: 0; 
     animation: fadeInDown 1s ease-out forwards; 
     animation-delay: 0.2s; 
@@ -231,7 +231,7 @@ nav {
     animation-delay: 0s;
   }
   
-  .main {
+  main {
     animation-delay: 0.4s;
   }
   
@@ -619,7 +619,6 @@ a{
 	 position: relative;
 	 opacity: 0.9;
    font-family: Arial, Helvetica, sans-serif;
-   font-size: 1.7em;
    font-weight: bold;
    color: #ffffffd7;
 	 -webkit-animation: push-in 0.5s;
