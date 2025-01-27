@@ -34,6 +34,10 @@
             property="og:url"
             content="https://lanhouse.squareweb.app/"
     >
+    <meta
+            property="og:site_name"
+            content="LanHouse"
+    >
     <title>LanHouse</title>
 </head>
 <body>
